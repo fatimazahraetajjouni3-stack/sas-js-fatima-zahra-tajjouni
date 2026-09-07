@@ -7,9 +7,9 @@
 
 | Information | À compléter |
 |---|---|
-| Nom et prénom | ... |
-| Classe | ... |
-| Nom d'utilisateur GitHub | ... |
+| Nom et prénom | fatima zahra tajjouni |
+| Classe | A |
+| Nom d'utilisateur GitHub | fatimazahraetajjouni3 |
 
 ## 🧭 Comment travailler
 
