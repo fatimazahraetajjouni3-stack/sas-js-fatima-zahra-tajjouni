@@ -9,10 +9,15 @@
  * Notez le résultat particulier pour null.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-04
- * ▶️ Commande : node day01/exercices/exercice-04.js
+ * ▶️ Commande : c
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+console.log(typeof 42);
+console.log(typeof "Youcode");
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+

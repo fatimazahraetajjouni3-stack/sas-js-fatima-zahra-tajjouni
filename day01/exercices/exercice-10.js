@@ -19,4 +19,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let age = 18;
+if(age<12){
+    console.log("enfant");
+}else if(age>=12 && age<18){
+    console.log("adolescent");
+}else if(age>=18 && age<=64){
+    console.log("adulte");
+}else if(age>=65){
+    console.log("senior");
+}
