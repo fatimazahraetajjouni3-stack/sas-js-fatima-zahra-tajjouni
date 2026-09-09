@@ -17,4 +17,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let totalpanier = 350;
+let livraisongratuite = false;
+
+if(totalpanier > 500){
+    totalpanier = totalpanier * 0.90;
+    //livraisongratuite = true;
+}
+if(totalpanier > 200){
+    livraisongratuite = true;
+}
+console.log("livraison gratuite: ", livraisongratuite)
+console.log("le coût final: ", totalpanier)
+

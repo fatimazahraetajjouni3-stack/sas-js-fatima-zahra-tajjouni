@@ -17,4 +17,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+ let prixExtrait = "  349.99 MAD  ";
+ let prixNettoye = prixExtrait.trim().replace(" MAD", "");
+ let prixNumerique = Number(prixNettoye);
+let quantite = 2;
+let prixTotal = prixNumerique * quantite;
+console.log("Prix unitaire converti :", prixNumerique);
+console.log("Prix total pour 2 articles :", prixTotal, "MAD");

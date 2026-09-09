@@ -17,4 +17,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let a = 3;
+let b = 4;
+let c = 5;
+let estValide = (a < b + c) && (b < a + c) && (c < a + b);
+if (estValide) {
+    console.log("Le triangle est valide. ✅");
+} else {
+    console.log("Le triangle n'est pas valide. ❌");
+}

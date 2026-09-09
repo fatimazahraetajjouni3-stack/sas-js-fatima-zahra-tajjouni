@@ -17,4 +17,28 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let nombre1 = 10;
+let nombre2 = 5;
+let operateur = "-";
+let resultat;
+switch(operateur){
+    case "+":
+    resultat = nombre1 + nombre2;
+    break;
+    case "-":
+        resultat = nombre1 - nombre2;
+        break;
+        case "*":
+        resultat = nombre1 * nombre2;
+        break;
+        case "/":
+            if(nombre2 !==0){
+                resultat = nombre1 / nombre2;
+            } else {
+                resultat = "erreur : division par zero impossible";
+            }
+            break;
+            default:
+                resultat = "operateur non valide";
+}
+console.log(resultat);

@@ -17,4 +17,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let annee = 2024
+if (annee % 4 == 0){
+    console.log("annÃ©e bissextile")
+}else if (annee % 100 === 0){
+    console.log("annÃ©e non divisible")
+}else if(annee % 400 === 0){
+    console.log("annÃ©e bissextile")
+}else{
+    console.log("annÃ©e non divisible")
+}
