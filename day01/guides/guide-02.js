@@ -8,5 +8,8 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
+let data = "123";
+console.log("Type initial :", typeof data);
+data = Number(data);
+console.log("Nouveau type :", typeof data);
 
-// TODO: écris ta solution ici.
