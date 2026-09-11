@@ -15,4 +15,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function estPalindrome(mot) {
+    let len = mot.length;
+    
+    for (let i = 0; i < len / 2; i++) {
+        
+        if (mot[i] !== mot[len - 1 - i]) {
+            return false; 
+        }
+    }
+    
+    return true;
+}
+console.log(estPalindrome("radar")); 
+console.log(estPalindrome("kayak")); 
+console.log(estPalindrome("javascript")); 
