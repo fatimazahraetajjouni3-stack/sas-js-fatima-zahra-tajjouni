@@ -22,11 +22,9 @@ let livraisongratuite = false;
 
 if(totalpanier > 500){
     totalpanier = totalpanier * 0.90;
-    //livraisongratuite = true;
 }
 if(totalpanier > 200){
     livraisongratuite = true;
 }
 console.log("livraison gratuite: ", livraisongratuite)
 console.log("le coût final: ", totalpanier)
-
