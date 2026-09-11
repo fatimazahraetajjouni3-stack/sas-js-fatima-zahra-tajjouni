@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const totalItems = 45;
+const itemsPerPage = 10;
+const  totalPage = Math.ceil(totalItems / itemsPerPage);
+let currentPage = 1;
+while (currentPage <= totalPage) {
+    const startItem = (currentPage - 1) * itemsPerPage + 1;
+    const endItem = Math.min(currentPage * itemsPerPage, totalItems);
+    console.log(` Scraping de la page ${currentPage} / ${totalPage} (elements ${startItem} a ${endItem})...`);
+    currentPage++;
+}

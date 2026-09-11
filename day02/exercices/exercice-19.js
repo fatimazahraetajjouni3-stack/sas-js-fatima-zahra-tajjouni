@@ -15,4 +15,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const taille = 8;
+let damier = "";
+for(let i = 0; i < taille; i++){
+    for(let j = 0; j < taille; j++){
+        if ((i + j) % 2 === 0){
+            damier += " ";
+        }else {
+            damier += "#";
+        }
+    }
+    damier += "\n";
+}
+console.log(damier);

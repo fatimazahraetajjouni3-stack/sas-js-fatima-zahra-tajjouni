@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let fib = [0 , 1]
+
+for (let i = 2; i < 10; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+}
+
+console.log(fib.join(", "));

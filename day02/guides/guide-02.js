@@ -8,5 +8,10 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
-
-// TODO: écris ta solution ici.
+let N = 100;
+let compteur = 0;
+while (N >= 1){
+    N = N / 2;
+    compteur++;
+}
+console.log("Nombre de division :", compteur);

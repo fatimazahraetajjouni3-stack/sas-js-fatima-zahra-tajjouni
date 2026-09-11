@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+for (let n = 100; n <= 999; n++) {
+    let c = Math.floor(n / 100);
+    let d = Math.floor((n / 10) % 10);
+    let u = n % 10;
+
+    if (Math.pow(c, 3) + Math.pow(d, 3) + Math.pow(u, 3) === n) {
+        console.log(n);
+    }
+}
