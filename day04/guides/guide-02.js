@@ -7,9 +7,9 @@
  *
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
-'use strict';
+
 function testerPortee() {
-    let  = 19;
+    let a = 19;
 }
 testerPortee();
 console.log(a);
