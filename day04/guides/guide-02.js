@@ -13,3 +13,4 @@ function testerPortee() {
 }
 testerPortee();
 console.log(a);
+
