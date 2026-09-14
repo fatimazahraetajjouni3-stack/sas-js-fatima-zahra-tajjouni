@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function chiffrerCesar(texte, decalage) {
+  const shift = (decalage % 26 + 26) % 26;
+
+  return texte.replace(/[a-zA-Z]/g, (char) => {
+    const base = char >= 'a' ? 97 : 65;
+    return String.fromCharCode(((char.charCodeAt(0) - base + shift) % 26) + base);
+  });
+}
+console.log(chiffrerCesar("ABC", 1));
+console.log(chiffrerCesar("Hello World!", 3));

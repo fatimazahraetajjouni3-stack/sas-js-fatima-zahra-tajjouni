@@ -16,4 +16,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function genererSlug(titre) {
+  return titre
+    .toLowerCase()  
+    .normalize("NFD")          
+    .replace(/[\u0300-\u036f]/g, "")    
+    .replace(/[^a-z0-9\s-]/g, "")     
+    .trim()                        
+    .replace(/\s+/g, "-")       
+    .replace(/-+/g, "-");     
+}
+const titre = "Les 10 secrets de JavaScript !";
+console.log(genererSlug(titre));

@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function compterMots(chaine) {
+  const mots = chaine.trim().split(/\s+/);
+  if (mots.length === 1 && mots[0] === "") {
+    return 0;
+  }
+
+  return mots.length;
+}
+console.log(compterMots("  Bonjour   le   monde  ")); 
+console.log(compterMots("   "));

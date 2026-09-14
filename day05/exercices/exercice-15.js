@@ -15,4 +15,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function sontAnagrammes(mot1, mot2) {
+  const preparer = (str) =>
+    str.toLowerCase().split("").sort().join("");
+
+  return preparer(mot1) === preparer(mot2);
+}
+console.log(sontAnagrammes("chien", "niche"));

@@ -9,4 +9,7 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+const dateStr = "2024-10-15";
+const annee = dateStr.split("-")[0];
+
+console.log(annee);

@@ -15,8 +15,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-phrase = "Hyper Text Markup Language";
-let mots = phrase.split();
-let premieres_lettres = [mot[0].upper() for() mot in mots];
-let sigle = "".join(premieres_lettres);
-print(sigle);
+function creerSigle(phrase) {
+    let mots = phrase.split(" ");
+    let resultat = "";
+
+    for (let i = 0; i < mots.length; i++) {
+        resultat = resultat + mots[i][0];
+    }
+
+    return resultat.toUpperCase();
+}
+
+console.log(creerSigle("Hyper Text Markup Language"));

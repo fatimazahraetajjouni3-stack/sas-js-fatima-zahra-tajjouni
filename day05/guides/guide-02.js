@@ -9,4 +9,9 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+const phrase = "J'apprends le JavaScript à YouCode";
+const motRecherche = "javascript";
+
+const contientMot = phrase.toLowerCase().includes(motRecherche.toLowerCase());
+
+console.log(contientMot);

@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function formater(montant) {
+  const str = String(montant);
+  const montantFormate = str.replace(/\B(?=(\d{3})+(?!\d))/g, " "); 
+  return `${montantFormate} MAD`;
+}
+console.log(formater(1234567)); 
+console.log(formater("1234567"));

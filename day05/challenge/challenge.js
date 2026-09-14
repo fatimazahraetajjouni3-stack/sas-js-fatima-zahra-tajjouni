@@ -23,4 +23,14 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let interdits = ["noob", "idiot", "nul"];
+function filtrerMessage(message) {
+    message = message.toLowerCase();
+    for (let i = 0; i < interdits.length; i++) {
+        let mot = interdits[i];
+
+        message = message.replaceAll(mot, "*".repeat(mot.length));
+    }
+    return message;
+}
+console.log(filtrerMessage("Tu es un NOOB"));

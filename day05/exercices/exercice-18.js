@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function compterE(texte) {
+  const matches = texte.match(/e/gi);
+  return matches ? matches.length : 0;
+}
+const paragraphe = "Le chiffrement de César est une méthode simple d'encodage de texte.";
+console.log(compterE(paragraphe));
