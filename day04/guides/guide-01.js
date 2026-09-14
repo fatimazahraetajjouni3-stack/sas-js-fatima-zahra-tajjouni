@@ -8,5 +8,11 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
-
-// TODO: écris ta solution ici.
+function saluer(nom) {
+    return `Bonjour, ${nom} !`;
+}
+const test1 = saluer("Thomas");
+console.log(test1); 
+const test2 = saluer("Sarah");
+console.log(test2); 
+console.log(saluer("Alice"));

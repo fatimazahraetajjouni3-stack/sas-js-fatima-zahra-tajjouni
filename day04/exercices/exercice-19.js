@@ -14,4 +14,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function alarme(message, secondes) {
+    const delaiEnMillisecondes = secondes * 1000;
+    setTimeout(function() {
+        console.log(`⏰ Alarme : ${message}`);
+    }, delaiEnMillisecondes);
+    console.log(`⏳ Alarme programmée dans ${secondes} secondes...`);
+}
+alarme("Le gâteau est cuit !", 3); 

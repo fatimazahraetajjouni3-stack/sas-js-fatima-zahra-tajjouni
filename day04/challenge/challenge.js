@@ -21,4 +21,37 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+const creerBourse = () => {
+
+    let or = 0;
+    const ajouterOr = (montant) => {
+        or += montant;
+        console.log(`Vous avez ramassé ${montant} or. Total: ${or} or.`);
+    };
+    const depenserOr = (montant, objet = "votre achat") => {
+        if (or >= montant) {
+            or -= montant;
+            console.log(`Achat réussi : Vous avez acheté ${objet} pour ${montant} or. Restant : ${or} or.`);
+            return true;
+        } else {
+            console.log(`Fonds insuffisants pour acheter ${objet} (${montant} or nécessaires). Vous n'avez que ${or} or.`);
+            return false;
+            }
+    };
+    const combatGagne = () => {
+        const montantAleatoire = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+        ajouterOr(montantAleatoire);
+    };
+    return {
+        ajouterOr,
+        depenserOr,
+        combatGagne
+    };
+};
+const heros = creerBourse();
+console.log("--- Début de l'aventure ---");
+heros.combatGagne();
+heros.combatGagne();
+heros.combatGagne();
+console.log("\n--- Tentative d'achat à la boutique ---");
+heros.depenserOr(100, "une épée");

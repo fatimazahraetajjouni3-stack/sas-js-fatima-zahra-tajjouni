@@ -8,5 +8,5 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
-
-// TODO: écris ta solution ici.
+const carre = x => x * x;
+console.log(carre(5));

@@ -14,4 +14,20 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function extrairePrixEtConvertir(chaineBrute) {
+    if (typeof chaineBrute !== 'string') {
+        return null;
+    }
+    const chaineNettoyee = chaineBrute.trim();
+    const correspondance = chaineNettoyee.match(/\d+(\.\d+)?/);
+    if (!correspondance) {
+        return null;
+    }
+    const prixNumerique = Number(correspondance[0]);
+    if (isNaN(prixNumerique)) {
+        return null;
+    }
+
+    return prixNumerique;
+}
+console.log(extrairePrixEtConvertir("   Prix: 15.99 $  "));    
